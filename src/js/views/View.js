@@ -1,6 +1,7 @@
-import { Fraction } from 'fractional';
+import Fraction from 'fraction.js';
 import { MSG_TYPE_ERROR } from '../config';
 // import icons from 'url:../../img/icons.svg';
+const icons = 'h';
 
 export default class View {
   _data;
@@ -24,7 +25,7 @@ export default class View {
           <use href='${icons}#icon-check'></use>
         </svg>
         <div class='recipe__quantity'>${
-          ing.quantity ? new Fraction(ing.quantity).toString() : ''
+          ing.quantity ? new Fraction(ing.quantity).toFraction().toString() : ''
         }</div>
         <div class='recipe__description'>
           <span class='recipe__unit'>${ing.unit}</span>
