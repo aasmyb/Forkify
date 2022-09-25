@@ -1,8 +1,6 @@
 import Fraction from 'fraction.js';
 import { MSG_TYPE_ERROR } from '../config';
-// import icons from 'url:../../img/icons.svg';
-const icons = 'h';
-
+import icons from '../../images/icons.svg';
 export default class View {
   _data;
 

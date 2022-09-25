@@ -1,6 +1,5 @@
 import View from './View';
-// import icons from 'url:../../img/icons.svg';
-const icons = 'h';
+import icons from '../../images/icons.svg';
 
 class PreviewView extends View {
   _generateMarkup(recipe) {
